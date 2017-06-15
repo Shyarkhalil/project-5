@@ -1,0 +1,88 @@
+// Centering the elements
+
+@mixin center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+@mixin text-center {
+  text-align: center;
+}
+// Media queries 
+
+@mixin mq($break) {
+  @if $break == "tablet" {
+    
+    @media (min-width: 768px) {
+    @content;
+  }
+      
+  } 
+   @else if $break == "desktop" {
+  
+      @media (min-width: 1024px) {
+       @content;
+      }
+    }
+   @else {
+      @error "Whoops! No value could be retrived for '#{$break}'";
+   }
+}
+
+
+
+// Background-image mixin
+
+
+@mixin img-replace($img: null, $bsize: null, $bposition:null, $battach: null, $h: null ) {
+  background-image: url('#{$path--rel}/#{$img}');
+  background-repeat: no-repeat;
+  background-size: $bsize;
+  background-position: $bposition;
+  background-attachment: $battach;
+  height: $h; 
+}
+
+
+
+// element-layout 
+
+@mixin element-layout ($padding, $margin,  $background-color ) {
+  padding:$padding;
+  margin: $margin;
+  background-color: $background-color;
+}
+
+
+
+@mixin element-position ($width, $position, $float, $display) {
+  width: $width;
+  position: $position;
+  float: $float;
+  display: $display;
+}
+
+
+
+
+
+// Text mixins
+
+@mixin text($f-size, $color, $l-height, $f-weight) {
+  font-size: $f-size;
+  color: $color;
+  line-height:$l-height;
+  font-weight: $f-weight;
+}
+
+
+// Border Mixins
+
+@mixin bordr ($brdr-bottom: null, $brdr-radius: null) {
+ border-bottom: $brdr-bottom;
+ border-radius: $brdr-radius;
+      
+}      
+      
+

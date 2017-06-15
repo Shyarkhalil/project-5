@@ -1,0 +1,74 @@
+/* =========================
+   NAVIGATION STYLE
+========================= */
+
+.main-nav {
+  margin-top: 1.5em;
+  @extend %flexy;
+  
+  & a {
+    @include element-layout(.9em, 0 0 .4em 0, $white ); 
+    display: block;
+    @extend %text-center;
+    @include mq(tablet) {
+      background-color: $color-background-nav;
+    }
+   &:hover {
+    color: $color-mhover;
+  }
+  }  
+}
+ 
+
+
+.main-header {
+  @include center;
+  @extend %min-height;
+  padding-top: 2em;
+ 
+  .name {
+  @extend %text-center;
+ }
+  
+  li {
+    @include mq(tablet) {
+    display: inline-table;
+  }
+ }
+}
+
+.header {
+  @include mq(desktop) {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 30;
+    
+    .main-header {
+     @include element-layout (0 0 6px, null, rgba(0, 0, 0, .6));
+      width: 100%;
+    }
+    
+    
+    .name,
+    .main-nav li {
+       float: left;
+     }
+    
+    .main-nav {
+      float: right;
+    }
+    
+    .name {  
+      margin-left: 30px;
+      color: $color-text-mainnav;   
+    }
+    
+   .main-nav li a {
+     @include element-layout (null, null, rgba(0, 0, 0, .0));
+      color: $color-text-mainnav;
+   }
+  }
+}
+
+

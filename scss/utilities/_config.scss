@@ -1,0 +1,104 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+
+
+/*****************************************************
+               Descriptive Base colors
+******************************************************/
+
+$white: #fff;
+$black: #000;
+$half-Baked: #73c3c0;  
+$cerulean: #0D9CDE;
+$regent-st-blue: #9fc6e2; 
+$cape-cod: #464b4c; 
+$outer-space: #292d2d;  
+$athens-gray: #F0F3F5; 
+$abbey: #4A5054;  
+$botticelli: #D0E0EA;  
+$athens-gray: #F0F3F5; 
+$snow-drift: #EFF4EE; 
+$steel-gray: #252439; 
+$gallery:#EBEBEB; 
+$java: #16B1B5; 
+$elm: #207E89; 
+$aqua-spring: #F8FDFD; 
+$elephant: #164B4C; 
+$silver: #ccc;
+/*************************************
+           Color Usage
+**************************************/
+
+$color-text-mnav: $cape-cod; // Main nav a font color at small screen
+$color-mhover: $half-Baked; // main nav hover color at small screen
+
+$color-background-body: $athens-gray; // Body backgound color at small screen
+$color-text-body:$outer-space; // Body font color
+
+
+$color-border-skill:$regent-st-blue; // Skill bottom hover border
+$color-font: $abbey; // Email and Phone font color at small screen
+$color-b-skill: $silver; // Bottom-border color of skill
+
+$color-border: $botticelli; // Back to top border color at small screen
+$color-font-backto: $outer-space; // Back to font color at small screen
+$color-list-hover: $cerulean; // Back to hover color at small screen 
+
+$color-background-nav: $athens-gray; // Navigation backgound color at 768px screen
+
+$color-background-skill: $athens-gray; // Skill backgorund at 768px screen
+$color-text-mainnav: $snow-drift; // Main-nav and student name font color large screen
+
+$color-background-contact: $steel-gray; // contact backgournd color al larage screen
+$color-text-contact: $gallery; //Contact info at large screen
+
+
+$color-text-footer: $java; // Main fotor font color at large screen
+$color-bg-nav-footer: $java; // Footer main nav background color at large screen
+$color-border-footer: $elm; // Footer-nav top border color at large screen
+$color-text-nav-footer: $aqua-spring; // Footer nav text color at large screen
+$color-hover-nav-footer: $elephant; // Footer nav hover color at large screen
+
+/*************************************
+           Font-Stack
+**************************************/
+$font-url--Google: "https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500,700,900";
+
+$font-stack-primary: 'Roboto', sans-serif;
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-cursive: cursive;
+
+/*************************************
+           Font-Weights
+**************************************/
+
+$font-weight--thin: 300;
+$font-weight--light: 400;
+$font-weight--medium: 500;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+
+/*****************************************
+              Text
+****************************************/ 
+
+$base__font-size : 16px;
+$base__line      : 24px;
+
+
+
+/*****************************************
+              Breakpoints
+****************************************/ 
+
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1024px)";
+
+
+// Path to Assets
+
+$path--rel      :"../img";
+

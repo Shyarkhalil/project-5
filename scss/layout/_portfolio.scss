@@ -1,0 +1,87 @@
+
+.portfolio {
+  @include element-position(100%, null, null, null);
+  @include element-layout(em(8px) 0 em(30px), null, $white );
+  @extend %min-height;
+  
+   img {
+     @include center;
+     @include mq(tablet) {
+      box-shadow: 10px 15px 20px rgba(0, 0, 0, .5);
+  }
+    
+  }
+  
+  
+ p {
+    @include element-layout(em(8px), 0 em(10px) em(20px), null);
+      font-weight: $font-weight--medium;
+    @include mq(tablet) {
+    @include element-layout(0 2em  0, 20px 0 30px, null);
+  }
+ }
+ #PORTFOLIO {
+  margin: em(40px) 0;
+ }
+
+  
+  
+}
+ 
+
+ .container {
+   @include mq(tablet) {
+     & h2 {
+       font-size: 1.45rem;
+       display: inline-block;
+     }
+    
+     & .col {
+       @include element-position (50%, null, left, null);
+    }
+    
+     & .secondary {
+       margin: 0 em(-25px) 0 em(12px);
+       clear: left;
+    }
+    
+  }
+}  
+  
+
+.portfolio {
+  @include mq(desktop) {
+  
+    
+     .col {
+      width: 33%;
+      float: left;
+    }
+    
+     img {
+      width: 92%;
+    }
+    
+    .search {
+      margin-right: -35px;
+    }
+    
+    .gallery {
+      @include element-layout(null, 0 12px 0 -5px, null );
+     }
+    
+    .calculator {
+      @include element-layout(null, 0 -33px 0 -15px, null );
+     }
+    
+    .map {
+      @include element-layout(null, 0 15px 0 25px, null ); 
+    }
+    
+    .secondary {
+      clear: right;
+    }
+
+  }
+}
+

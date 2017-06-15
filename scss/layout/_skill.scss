@@ -1,0 +1,58 @@
+
+/* =========================
+   SKILLS
+========================= */
+
+
+.skill {
+    @include element-layout (20px 40px 40px, 10px 0, $white);
+    @extend %text-center;
+    @include bordr (6px solid $color-b-skill, 6px);
+    transition: all .5s;
+    width: 100%;
+    
+    &:hover {
+     border-bottom-color: $color-border-skill;
+     }
+      
+    p, li, h2 {
+       font-family:$font-stack-cursive;
+    }
+    
+    li {
+    padding: 10px;
+     }
+    
+    h2 {
+    margin: 0;
+    font-size: 2em;
+    }
+    
+}
+
+
+
+
+.skill {
+  @include mq(tablet) {
+    @include element-layout (12px, null, null);
+    @include text-center;
+    color: $white;
+    border-bottom: none;
+    border-radius: 0;
+   @include img-replace("wood.jpg", cover, 70%, fixed);
+   & li {
+   font-size: 1.25em;
+   }
+
+  & p {
+   font-size: 1.40em; 
+   margin: 12px;
+  }
+  & h2 {
+    color: $white;  
+  }
+ }
+}
+
+

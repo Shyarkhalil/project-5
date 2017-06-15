@@ -1,0 +1,46 @@
+
+.profile {
+  @include mq(tablet) {
+   @include element-layout (0 0 3rem, 40px 0 0, null);
+   .prg {
+     @include element-position(60%, null, left, null);
+     @include element-layout (0 0 0 18px, 0, null);
+   }
+  }
+  
+  .photo-sec {
+    @include element-layout (2em 0 .8em, 1em, null);
+    width: 80%;
+  @include mq(tablet) {
+    @include element-layout (0, 8px 0 0, null);
+    width: 35%;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, .5);
+  }
+  
+ }  
+}
+
+
+
+.profile {
+  @include mq (desktop) {
+    @include element-layout (6em 0, 0, null);
+  @include img-replace("wall.jpg", 100%, null, fixed, 500px);
+ .photo-sec {
+    width: 35%;
+    margin: 30px 0 0;
+  }
+  .prg {
+    padding: 23px;
+    font-weight:$font-weight--medium;
+    text-shadow: -1px 5px 7px rgba(0, 0, 0, 0.41);
+  }
+    
+ }
+  
+}
+
+
+
+
+

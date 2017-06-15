@@ -1,0 +1,48 @@
+// @include text(fontsize, color, line height, fontweight);
+
+// Base 
+
+body {
+  @include text($base__font-size, $color-text-body, 1.5, null );
+  @extend %text-center;
+ 
+}
+
+h2 {
+  @include text(1.45rem, rgba(57, 59, 60, 0.91), null, null );
+}
+
+
+//header 
+.main-nav { 
+  & a { 
+    @include text(1.125em, $color-text-mnav, 1.3, $font-weight--ultra-bold);
+  }  
+}
+
+// profile 
+
+.profile {
+  @include mq(tablet) {
+   .prg {
+     @include text(20px, null, 1.40em, null);
+   }
+  }
+  
+  @include mq (desktop) {
+    .prg {
+       @include text(1.75rem, rgba(255, 255, 255, 1), null, null);
+    }
+  }
+}
+
+// portfolio
+.portfolio {
+  & p {
+     @include text($base__font-size, rgba(77, 79, 80, 0.76), null, null);
+     @include mq(tablet) {
+      @include text(1em, null, 1.3, null);
+    }
+  }
+}
+

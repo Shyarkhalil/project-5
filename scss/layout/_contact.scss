@@ -1,0 +1,62 @@
+
+.main-contact {
+  @include center;
+  padding: 30px 0 0 0;
+  
+  
+.phone,
+.mail {
+  display: block;
+  padding: .2em;
+  color: $color-font;
+ }
+  
+ .contact-info {
+  padding: .4em;
+   
+ }
+
+.number,
+.email {
+  color: $color-font;
+  font-weight: $font-weight--ultra-bold;
+ }
+ @include mq(tablet) {
+  .contact-info {
+    width: 65%;
+    margin: auto;
+    font-size: 18px;
+   }
+
+  .phone {
+    margin-top: 20px;
+   }
+
+  }
+}
+
+
+
+
+
+
+.main-contact {
+  @include mq (desktop) {
+   width: 100%;
+   @include element-layout (15px, 20px 0 0,  $color-background-contact );
+   .contact-info {
+      width: 60%;
+      font-size: 22px;
+      color: $color-text-contact;
+   }
+  
+    h3 {
+     color: $white;
+    }
+  
+  .email, .number, .phone, .mail {
+    font-weight:$font-weight--light;
+    color: $color-text-footer;
+   }
+  }
+ }

@@ -1,0 +1,101 @@
+
+
+.backto {
+  @include center;
+  margin-top: 20px;
+  border-top: 2.5px solid $color-border;
+  
+  .student-name,
+  .backto,
+  .back-to li a {
+    display: inline-block;
+  }
+  
+  .student-name {
+    float: left;
+    @include element-layout(17px 0, 0, null);
+ }
+  
+ .back-to li a {
+   float: right;
+   color: $color-font-backto;
+   font-weight: $font-weight--bold;
+   padding: 20px 0;
+  &:hover {
+  color: $color-list-hover;
+  }
+ }
+}
+
+
+.footer-nav h3, .nav  {
+  display: none;
+}
+
+
+footer {
+  @include mq (tablet) {
+    .back-to {
+      display: none;
+     }
+
+    .footer-nav,
+    .nav,
+    .nav li  {
+       display: flex;
+       float: right;
+       margin: 0 10px 28px 0;
+     }
+    
+    .nav li a {
+      @include element-layout (10px,10px 5px 0 0, null); 
+      color: $color-font-backto;
+      font-weight: $font-weight--ultra-bold;
+       &:hover {
+         color: $color-list-hover;
+     }
+   }
+  
+  }
+  
+  @include mq (desktop) {
+    .backto {
+      display: none;
+    }
+    
+    .footer-nav {
+      margin: 0; 
+      width: 100%;
+      padding: 0 20px;
+      background-color: #16b1b5;
+      border-top: 4px solid #207e89;
+     }
+    
+    .footer-nav h3 {
+      margin: 25px 0 0;
+      display: inline-block;
+      float: left;
+      color: $white;
+    }
+    
+    .nav, .footer-nav {
+     display:inline-block; 
+    }
+    
+    .nav li a {
+       margin-top: 20px;
+       padding: 10px;
+       color: #f8fdfd;
+       &:hover {
+        color: #164b4c;
+      }
+     }
+  }
+  
+}
+
+
+ 
+   
+ 
+ 
